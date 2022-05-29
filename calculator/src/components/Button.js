@@ -1,9 +1,15 @@
 import React from 'react'
 
-export default function Button() {
+const isOperator = value => {
+    return !isNaN(value) || value === '.' || value === '=';
+}
+
+export default function Button(props) {
     return (
-        <div>
-           Button 
+        <div className={`button-wrapper ${
+            isOperator(props.children) ? null : "operator"
+         }`}>
+           {props.children} 
         </div>
     )
 }
