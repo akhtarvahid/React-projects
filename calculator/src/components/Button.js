@@ -1,4 +1,5 @@
 import React from 'react'
+import './Button.css';
 
 const isOperator = value => {
     return !isNaN(value) || value === '.' || value === '=';
