@@ -1,9 +1,9 @@
 import React from 'react'
-
-export default function Input() {
+import './Input.css';
+export default function Input({input}) {
     return (
-        <div>
-          Input  
+        <div className="input">
+          {input}  
         </div>
     )
 }
