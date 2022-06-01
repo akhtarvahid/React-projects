@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from './components/Button';
 import './App.css';
 import Input from './components/Input';
+import ClearButton from './components/ClearButton';
 
 function App() {
   const [input, setInput] = useState('');
@@ -32,6 +33,11 @@ function App() {
           <Button>0</Button>
           <Button>=</Button>
           <Button>-</Button>
+         </div>
+         <div className="row">
+           <ClearButton handleClear={() => this.setState({ input: ''})}>
+             Clear
+           </ClearButton>
          </div>
        </div>
     </div>
