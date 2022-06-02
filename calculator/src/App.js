@@ -6,36 +6,40 @@ import ClearButton from './components/ClearButton';
 
 function App() {
   const [input, setInput] = useState('');
+
+  const inputValueHandler = (value) => {
+    setInput(inpValue => value + inpValue);
+  }
   return (
     <div className="App">
        <div className="calc-wrapper">
          <Input input={input} />
          <div className="row">
-          <Button>7</Button>
-          <Button>8</Button>
-          <Button>9</Button>
-          <Button>/</Button>
+          <Button inputHandler={inputValueHandler}>7</Button>
+          <Button inputHandler={inputValueHandler}>8</Button>
+          <Button inputHandler={inputValueHandler}>9</Button>
+          <Button inputHandler={inputValueHandler}>/</Button>
          </div>
          <div className="row">
-          <Button>4</Button>
-          <Button>5</Button>
-          <Button>6</Button>
-          <Button>X</Button>
+          <Button inputHandler={inputValueHandler}>4</Button>
+          <Button inputHandler={inputValueHandler}>5</Button>
+          <Button inputHandler={inputValueHandler}>6</Button>
+          <Button inputHandler={inputValueHandler}>X</Button>
          </div>
          <div className="row">
-          <Button>1</Button>
-          <Button>2</Button>
-          <Button>3</Button>
-          <Button>+</Button>
+          <Button inputHandler={inputValueHandler}>1</Button>
+          <Button inputHandler={inputValueHandler}>2</Button>
+          <Button inputHandler={inputValueHandler}>3</Button>
+          <Button inputHandler={inputValueHandler}>+</Button>
          </div>
          <div className="row">
-          <Button>.</Button>
-          <Button>0</Button>
-          <Button>=</Button>
-          <Button>-</Button>
+          <Button inputHandler={inputValueHandler}>.</Button>
+          <Button inputHandler={inputValueHandler}>0</Button>
+          <Button inputHandler={inputValueHandler}>=</Button>
+          <Button inputHandler={inputValueHandler}>-</Button>
          </div>
          <div className="row">
-           <ClearButton handleClear={() => this.setState({ input: ''})}>
+           <ClearButton handleClear={() => setInput('')}>
              Clear
            </ClearButton>
          </div>

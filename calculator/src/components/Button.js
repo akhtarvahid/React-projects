@@ -9,7 +9,7 @@ export default function Button(props) {
     return (
         <div className={`button-wrapper ${
             isOperator(props.children) ? null : "operator"
-         }`}>
+         }`} onClick={() => props.inputHandler(props.children)}>
            {props.children} 
         </div>
     )
