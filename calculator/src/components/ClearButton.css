@@ -8,4 +8,5 @@
     background-color: #999999c2;
     flex: 1 1;
     outline: 1px solid #8888;
+    cursor: pointer;
 }
