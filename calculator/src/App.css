@@ -6,8 +6,10 @@
   width: 100%;
 }
 .calc-wrapper {
-  width: 400px;
-  height: 600px;
+  width: 500px;
+  height: 672px;
+  padding: 13px;
+  background: #467572;
 }
 .row {
   display: flex;
