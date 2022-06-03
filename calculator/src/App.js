@@ -12,7 +12,7 @@ function App() {
     setInput(inpValue =>  inpValue + value);
   }
   const handleEqual = () => {
-     setInput(math.evaluate(input));
+     setInput(math.evaluate(input?.replaceAll('X', '*')));
   }
   return (
     <div className="App">
