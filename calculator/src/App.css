@@ -2,13 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
+}
+.App h2 {
+  color: #8e4747;
 }
 .calc-wrapper {
   width: 500px;
   height: 672px;
-  padding: 13px;
+  padding: 5px;
   background: #467572;
 }
 .row {

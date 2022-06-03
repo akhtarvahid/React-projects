@@ -6,7 +6,6 @@
     font-weight: lighter;
     font-size: 1.4em;
     background-color: #c8ccd9;
-    color: #888;
     flex: 1;
     outline: 1px solid #888;  
     cursor: pointer;
@@ -14,4 +13,5 @@
 .operator {
     background-color: #284232;
     color: white;
+    font-weight: 500;
 }

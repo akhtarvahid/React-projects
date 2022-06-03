@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import * as math from 'mathjs';
 import Button from './components/Button';
-import './App.css';
 import Input from './components/Input';
 import ClearButton from './components/ClearButton';
+import './App.css';
 
 function App() {
   const [input, setInput] = useState('');
@@ -16,6 +16,7 @@ function App() {
   }
   return (
     <div className="App">
+       <h2>Calculator</h2>
        <div className="calc-wrapper">
          <Input input={input} />
          <div className="row">
